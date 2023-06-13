@@ -18,7 +18,7 @@ TC01
     Wait Until Page Contains Element    dt_login_button    10
     Click Element    dt_login_button
     Wait Until Page Contains Element    txtEmail    10
-    Input Text    txtEmail    johanadeqdewfewffwen@besquare.com.my
+    Input Text    txtEmail    jodwdddhanadeqdewfewffwen@besquare.com.my
     Input Password    txtPass    frefafefeg...
     Click Element    //button[@name="login"]
     Wait Until Element Is Visible    ${account}    10
@@ -42,7 +42,7 @@ TC02
     Wait Until Page Contains Element    dt_login_button    10
     Click Element    dt_login_button
     Wait Until Page Contains Element    txtEmail    10
-    Input Text    txtEmail    johanadeqdewfewffwen@besquare.com.my
+    Input Text    txtEmail    jodwdddhanadeqdewfewffwen@besquare.com.my
     Input Password    txtPass    frefafefeg...
     Click Element    //button[@name="login"]
     Wait Until Element Is Visible    ${account}    10
@@ -68,7 +68,7 @@ TC_03: Create API Token by selecting TRADE access on the scopes
     Wait Until Page Contains Element    dt_login_button    10
     Click Element    dt_login_button
     Wait Until Page Contains Element    txtEmail    10
-    Input Text    txtEmail    johanadeqdewfewffwen@besquare.com.my
+    Input Text    txtEmail    jodwdddhanadeqdewfewffwen@besquare.com.my
     Input Password    txtPass    frefafefeg...
     Click Element    //button[@name="login"]
     Wait Until Element Is Visible   ${account}     10
@@ -89,7 +89,7 @@ TC_04: Create API Token by not selecting any access option on the scopes
     Wait Until Page Contains Element    dt_login_button    10
     Click Element    dt_login_button
     Wait Until Page Contains Element    txtEmail    10
-    Input Text    txtEmail    johanadeqdewfewffwen@besquare.com.my
+    Input Text    txtEmail    jodwdddhanadeqdewfewffwen@besquare.com.my
     Input Password    txtPass    frefafefeg...
     Click Element    //button[@name="login"]
     Wait Until Element Is Visible   ${account}     10
@@ -108,7 +108,7 @@ TC_05: Create API Token by not selecting any access option on the scopes
     Wait Until Page Contains Element    dt_login_button    10
     Click Element    dt_login_button
     Wait Until Page Contains Element    txtEmail    10
-    Input Text    txtEmail    johanadeqdewfewffwen@besquare.com.my
+    Input Text    txtEmail    jodwdddhanadeqdewfewffwen@besquare.com.my
     Input Password    txtPass    frefafefeg...
     Click Element    //button[@name="login"]
     Wait Until Element Is Visible   ${account}     10

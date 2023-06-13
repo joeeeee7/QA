@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230613 13:55:02.898" rpa="false" schemaversion="3">
+<suite id="s1" name="TC03" source="/home/johanan/Desktop/besquare_2023/besquare_2023/Project2/TC03/TC03.robot">
+<test id="s1-t1" name="TC02 User includes special characters such as “.wfwf.@”" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230613 13:55:02.983" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com'.</msg>
+<status status="PASS" starttime="20230613 13:55:02.983" endtime="20230613 13:55:05.549"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230613 13:55:05.549" endtime="20230613 13:55:05.655"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dt_login_button</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230613 13:55:05.655" endtime="20230613 13:55:05.666"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_login_button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:05.667" level="INFO">Clicking element 'dt_login_button'.</msg>
+<status status="PASS" starttime="20230613 13:55:05.666" endtime="20230613 13:55:08.017"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>txtEmail</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230613 13:55:08.018" endtime="20230613 13:55:08.033"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>txtEmail</arg>
+<arg>johanan@besquare.com.my</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:08.034" level="INFO">Typing text 'johanan@besquare.com.my' into text field 'txtEmail'.</msg>
+<status status="PASS" starttime="20230613 13:55:08.033" endtime="20230613 13:55:08.107"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>txtPass</arg>
+<arg>Hello12345...</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:08.108" level="INFO">Typing password into text field 'txtPass'.</msg>
+<msg timestamp="20230613 13:55:08.148" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230613 13:55:08.177" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230613 13:55:08.108" endtime="20230613 13:55:08.177"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:08.178" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<status status="PASS" starttime="20230613 13:55:08.177" endtime="20230613 13:55:16.446"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${account}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 13:55:16.447" endtime="20230613 13:55:16.469"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:16.470" level="INFO">Clicking element '//a[@class="trading-hub-header__setting"]'.</msg>
+<status status="PASS" starttime="20230613 13:55:16.470" endtime="20230613 13:55:16.572"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${account_closing}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 13:55:16.572" endtime="20230613 13:55:17.402"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${account_closing}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:17.403" level="INFO">Clicking element '//a[@href="/account/closing-account"]'.</msg>
+<status status="PASS" starttime="20230613 13:55:17.402" endtime="20230613 13:55:17.519"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_btn}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 13:55:17.519" endtime="20230613 13:55:17.549"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${close_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:17.550" level="INFO">Clicking element '//button[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]'.</msg>
+<status status="PASS" starttime="20230613 13:55:17.549" endtime="20230613 13:55:17.610"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${text_area}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 13:55:17.611" endtime="20230613 13:55:17.639"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_area}</arg>
+<arg>.wfwf.@</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230613 13:55:17.640" level="INFO">Typing text '.wfwf.@' into text field '//textarea[@name="other_trading_platforms"]'.</msg>
+<status status="PASS" starttime="20230613 13:55:17.639" endtime="20230613 13:55:17.731"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230613 13:55:37.732" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20230613 13:55:17.731" endtime="20230613 13:55:37.732"/>
+</kw>
+<status status="PASS" starttime="20230613 13:55:02.982" endtime="20230613 13:55:37.733"/>
+</test>
+<doc>Close Account</doc>
+<status status="PASS" starttime="20230613 13:55:02.898" endtime="20230613 13:55:37.734"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC03">TC03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
