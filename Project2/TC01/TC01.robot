@@ -35,8 +35,8 @@ TC01 Close Account by selecting up to 1 reason
     Click Element    ${continue_btn}
     Page Should Contain Element    ${prompt_message}    10
     Click Element    ${prompt_message}
-    # Wait Until Element Is Visible    ${close_account_btn}    10
-    # Click Element    ${close_account_btn}
+    Wait Until Element Is Visible    ${close_account_btn}    10
+    Click Element    ${close_account_btn}
     Sleep    20
 
 

@@ -26,6 +26,6 @@ TC04 User includes more than 110 characters in the text box field
     Click Element    ${close_btn}
     Wait Until Element Is Visible    ${character_input}    10
     Input Text    ${character_input}     HIneijbewifbwiuefbwebwubwubwbwbwnkwcnkwnckwjcnknwcnnwkebeiwwwcwkjcnwjkcnwjnckwcnwncnwnckwncjwncjwncjwncnwjcnwj
-    # Wait Until Element Is Visible    ${close_account_btn}    10
-    # Click Element    ${close_account_btn}
+    Wait Until Element Is Visible    ${close_account_btn}    10
+    Click Element    ${close_account_btn}
     Sleep    20

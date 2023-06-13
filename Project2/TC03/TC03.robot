@@ -27,6 +27,6 @@ TC03 User includes special characters such as “.wfwf.@”
     Click Element    ${close_btn}
     Wait Until Element Is Visible    ${text_area}    10
     Input Text    ${text_area}     .wfwf.@
-    # Wait Until Element Is Visible    ${close_account_btn}    10
-    # Click Element    ${close_account_btn}
+    Wait Until Element Is Visible    ${close_account_btn}    10
+    Click Element    ${close_account_btn}
     Sleep    20

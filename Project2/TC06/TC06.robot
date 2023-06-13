@@ -39,8 +39,8 @@ TC06 User proceeds to close the account by confirming the prompt message by clic
     Click Element    ${continue_btn}
     Page Should Contain Element    ${prompt_message}    10
     Click Element    ${prompt_message}
-    # Wait Until Element Is Visible    ${close_account_btn}    10
-    # Click Element    ${close_account_btn}
+    Wait Until Element Is Visible    ${close_account_btn}    10
+    Click Element    ${close_account_btn}
     Sleep    20
 
 
